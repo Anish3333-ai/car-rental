@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="styles1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Car Rental</h1>
+        <div id="searchbar">
+            <form action="/search" method="GET">
+                <label for="search">SEARCH:</label>
+                <input type="text" id="search" name="q" placeholder="Enter the car you want">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <nav class="ups">
+        <a class="ups1" href="index.html">Home</a>
+        <a class="ups2" href="#fleet">New models</a>
+        <a  class="ups3" href="#contact">Contact</a>
+        <a class="ups4" href="#trending">Trending</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to our Car Rental Service!</h2>
+        <p>Explore our wide range of vehicles for rent at affordable price .</p>
+    </section>
+    
+
+    <section class="collection">
+        <h2>Our Collection</h2>
+        <div class="car-container">
+            <div class="car-card">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2018-volvo-s90-t8-inscription-1542743344.jpg" alt="Car 2" alt="Car 1">
+                <h3>SEDAN</h3>
+                <p>A typical four door car, for making small trips</p>
+                <p>Rental Price: ₹1000 per day</p>
+            </div>
+
+            <div class="car-card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.u8dOGSO-F2dAyej3XHzurQHaEK&pid=Api&P=0&h=180">
+                <h3>XUV</h3>
+                <p>XUV are the best for long journey with family</p>
+                <p>Rental Price: ₹1500 per day</p>
+            </div>
+            <div class="car-card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.hHc7nFahz_ydlIfrBsLKfwHaE7&pid=Api&P=0&h=180">
+                <h3>HATCHBACKS</h3>
+                <p>Atypical Hatchbacks can take upto 5 passengers.</p>
+                <p>Rental Price: ₹1200 per day</p>
+            </div>
+
+            <!-- Add more car cards as needed -->
+        </div>
+    </section>
+    <main>
+        
+    
+        <section>
+            <form ></form>
+            <fieldset>
+          <h1 class="Reserve a car" >Reserve a Car</h1> 
+          <form >
+            <label for="carType">Car Type:</label><br>
+            <select  name="carType">
+              <option value="Hatchbacks">Hatchbacks</option>
+              <option value="sedan">Sedan</option>
+              <option value="suv">SUV</option>
+            </select>
+                <br>
+            <label for="pickupDate">Pickup Date:</label>
+            <input type="date" id="pickupDate" name="pickupDate" required>
+                
+            <label for="returnDate">Return Date:</label>
+            <input type="date" id="returnDate" name="returnDate" required>
+    
+            <button type="submit">Reserve Now</button>
+        </fieldset>
+          </form>
+        </section>
+      
+    
+<section>
+    <form>
+        <h2>Medical Appointment Form</h2>
+    
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+    
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+    
+        <label for="appointmentDate">Appointment Date:</label>
+        <input type="date" id="appointmentDate" name="appointmentDate" required>
+    
+        <label for="appointmentTime">Appointment Time:</label>
+        <input type="time" id="appointmentTime" name="appointmentTime" required>
+        <label for="department">Select Department:</label>
+        <select id="department" name="department" required>
+          <option value="">Please Select</option>
+          <option value="general">General Medicine</option>
+          <option value="pediatrics">Pediatrics</option>
+          <option value="cardiology">Cardiology</option>
+        
+          <!-- Add more options as needed -->
+        </select>
+    
+        <label for="procedure">Which Procedure do you want to make an Appointment for?</label>
+          <select name="procedure" id="procedure" required>
+            <option value="">Please Select</option>
+            <option value="Medical">Medical Examination</option>
+            <option value="doctor">Doctor Check</option>
+            <option value="result">Result Analysis</option>
+            <option value="check">Check-up</option>
+    
+          </select>
+    
+        <button type="submit">Submit Appointment</button>
+      </form>
+</section>
+<section>
+    <h1 class="FAQ">FAQ's about renting a car? </h1>
+    <ol>
+    <li><h3><a class="qna" href="#1">What is the speed limit of you car?</a></h3></li>
+    <li><h3><a class="qna" href="#2">How much milage it provides?</a></h3></li>
+    <li><h3><a class="qna" href="#3">Special offer this week?</a></h3></li>
+    <li><h3><a class="qna" href="#4">Why should i rent from this company?</a></h3></li>
+    </ol>
+</section>
+<br>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>For inquiries and reservations, please contact us:</p>
+    <p>Email: info@carrental.com</p>
+    </section>
+</main>
+
+
+<div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+    </div>
+    </div>
+  
+    </footer>
+
+    
+</body>
+
+</html>
